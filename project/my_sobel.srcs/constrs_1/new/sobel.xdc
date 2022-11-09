@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN K17 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+set_property PACKAGE_PIN M18 [get_ports rx]
+set_property IOSTANDARD LVCMOS33 [get_ports rx]
+set_property PACKAGE_PIN M17 [get_ports tx]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+set_property PACKAGE_PIN P14 [get_ports sys_rst]
+set_property IOSTANDARD LVCMOS18 [get_ports sys_rst]

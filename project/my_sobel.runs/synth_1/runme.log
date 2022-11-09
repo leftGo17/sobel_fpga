@@ -1,0 +1,375 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11708 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 404.508 ; gain = 98.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Acode/Xilinx_FPGA/my_sobel/rtl/top.v:4]
+	Parameter UART_BPS bound to: 26'b00000000011100001000000000 
+	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Acode/Xilinx_FPGA/my_sobel/rtl/uart_rx.v:3]
+	Parameter UART_BPS bound to: 26'b00000000011100001000000000 
+	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
+	Parameter BAUD_CNT_MAX bound to: 26'b00000000000000000110110010 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [D:/Acode/Xilinx_FPGA/my_sobel/rtl/uart_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sobel_ctrl' [D:/Acode/Xilinx_FPGA/my_sobel/rtl/sobel_ctrl.v:3]
+	Parameter matrix_row bound to: 8'b01100100 
+	Parameter matrix_col bound to: 8'b01100100 
+	Parameter THRESHOLD bound to: 8'b00001100 
+	Parameter BLACK bound to: 8'b00000000 
+	Parameter WHITE bound to: 8'b11111111 
+	Parameter max_row bound to: 8'b01100011 
+	Parameter max_col bound to: 8'b01100011 
+INFO: [Synth 8-6157] synthesizing module 'data_fifo' [D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.runs/synth_1/.Xil/Vivado-15332-LAPTOP-7BI1LFRR/realtime/data_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_fifo' (2#1) [D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.runs/synth_1/.Xil/Vivado-15332-LAPTOP-7BI1LFRR/realtime/data_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_ctrl' (3#1) [D:/Acode/Xilinx_FPGA/my_sobel/rtl/sobel_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Acode/Xilinx_FPGA/my_sobel/rtl/uart.tx.v:3]
+	Parameter UART_BPS bound to: 26'b00000000011100001000000000 
+	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
+	Parameter BAUD_CNT_MAX bound to: 26'b00000000000000000110110010 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [D:/Acode/Xilinx_FPGA/my_sobel/rtl/uart.tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/Acode/Xilinx_FPGA/my_sobel/rtl/top.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.402 ; gain = 154.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.402 ; gain = 154.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.402 ; gain = 154.133
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/sources_1/ip/data_fifo/data_fifo/data_fifo_in_context.xdc] for cell 'sobel_ctrl_inst_1/fifo_inst_1'
+Finished Parsing XDC File [d:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/sources_1/ip/data_fifo/data_fifo/data_fifo_in_context.xdc] for cell 'sobel_ctrl_inst_1/fifo_inst_1'
+Parsing XDC File [d:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/sources_1/ip/data_fifo/data_fifo/data_fifo_in_context.xdc] for cell 'sobel_ctrl_inst_1/fifo_inst_2'
+Finished Parsing XDC File [d:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/sources_1/ip/data_fifo/data_fifo/data_fifo_in_context.xdc] for cell 'sobel_ctrl_inst_1/fifo_inst_2'
+Parsing XDC File [D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/constrs_1/new/sobel.xdc]
+Finished Parsing XDC File [D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/constrs_1/new/sobel.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.srcs/constrs_1/new/sobel.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.012 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 794.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 794.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for sobel_ctrl_inst_1/fifo_inst_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sobel_ctrl_inst_1/fifo_inst_2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_flag" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
+	   6 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 16    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module sobel_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
+	   6 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 14    
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "uart_rx_inst/bit_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sobel_ctrl_inst_1/cnt_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_tx_inst/bit_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[7]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[6]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[5]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[4]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[3]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[2]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sobel_ctrl_inst_1/po_data_reg[1]' (FDRE) to 'sobel_ctrl_inst_1/po_data_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 794.012 ; gain = 487.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |data_fifo     |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |data_fifo    |     1|
+|2     |data_fifo__2 |     1|
+|3     |BUFG         |     1|
+|4     |CARRY4       |    29|
+|5     |LUT1         |     4|
+|6     |LUT2         |    49|
+|7     |LUT3         |    56|
+|8     |LUT4         |    53|
+|9     |LUT5         |    35|
+|10    |LUT6         |    32|
+|11    |FDCE         |    57|
+|12    |FDPE         |     4|
+|13    |FDRE         |   166|
+|14    |IBUF         |     3|
+|15    |OBUF         |     1|
++------+-------------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------+------+
+|      |Instance            |Module     |Cells |
++------+--------------------+-----------+------+
+|1     |top                 |           |   510|
+|2     |  sobel_ctrl_inst_1 |sobel_ctrl |   374|
+|3     |  uart_rx_inst      |uart_rx    |    77|
+|4     |  uart_tx_inst      |uart_tx    |    54|
++------+--------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 811.883 ; gain = 172.004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.883 ; gain = 505.613
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 811.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 811.883 ; gain = 515.914
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 811.883 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Acode/Xilinx_FPGA/my_sobel/project/my_sobel.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  9 18:34:21 2022...

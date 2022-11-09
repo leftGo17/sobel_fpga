@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sobel_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sobel" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="20550000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="226"></NameColumnWidth>
+      <ValueColumnWidth column_width="265"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject fp_name="/tb_sobel/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/rx" type="logic">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/sys_rst" type="logic">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/pi_data" type="array">
+      <obj_property name="ElementShortName">pi_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pi_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/pi_flag" type="logic">
+      <obj_property name="ElementShortName">pi_flag</obj_property>
+      <obj_property name="ObjectShortName">pi_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/po_flag" type="logic">
+      <obj_property name="ElementShortName">po_flag</obj_property>
+      <obj_property name="ObjectShortName">po_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/po_data" type="array">
+      <obj_property name="ElementShortName">po_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">po_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/cnt_row" type="array">
+      <obj_property name="ElementShortName">cnt_row[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_row[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/cnt_col" type="array">
+      <obj_property name="ElementShortName">cnt_col[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_col[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/wr_en1" type="logic">
+      <obj_property name="ElementShortName">wr_en1</obj_property>
+      <obj_property name="ObjectShortName">wr_en1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/data_in1" type="array">
+      <obj_property name="ElementShortName">data_in1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/wr_en2" type="logic">
+      <obj_property name="ElementShortName">wr_en2</obj_property>
+      <obj_property name="ObjectShortName">wr_en2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/data_in2" type="array">
+      <obj_property name="ElementShortName">data_in2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/data_out1" type="array">
+      <obj_property name="ElementShortName">data_out1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/data_out2" type="array">
+      <obj_property name="ElementShortName">data_out2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/wr_en1_flag" type="logic">
+      <obj_property name="ElementShortName">wr_en1_flag</obj_property>
+      <obj_property name="ObjectShortName">wr_en1_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/rd_en_reg1" type="logic">
+      <obj_property name="ElementShortName">rd_en_reg1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/a1" type="array">
+      <obj_property name="ElementShortName">a1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/a2" type="array">
+      <obj_property name="ElementShortName">a2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/a3" type="array">
+      <obj_property name="ElementShortName">a3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/b1" type="array">
+      <obj_property name="ElementShortName">b1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/b2" type="array">
+      <obj_property name="ElementShortName">b2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/b3" type="array">
+      <obj_property name="ElementShortName">b3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/c1" type="array">
+      <obj_property name="ElementShortName">c1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/c2" type="array">
+      <obj_property name="ElementShortName">c2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/c3" type="array">
+      <obj_property name="ElementShortName">c3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/can_sobel" type="logic">
+      <obj_property name="ElementShortName">can_sobel</obj_property>
+      <obj_property name="ObjectShortName">can_sobel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/gx" type="array">
+      <obj_property name="ElementShortName">gx[10:0]</obj_property>
+      <obj_property name="ObjectShortName">gx[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/gy" type="array">
+      <obj_property name="ElementShortName">gy[10:0]</obj_property>
+      <obj_property name="ObjectShortName">gy[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/can_sobel_gxy" type="logic">
+      <obj_property name="ElementShortName">can_sobel_gxy</obj_property>
+      <obj_property name="ObjectShortName">can_sobel_gxy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/gxy" type="array">
+      <obj_property name="ElementShortName">gxy[10:0]</obj_property>
+      <obj_property name="ObjectShortName">gxy[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/can_sobel_campare" type="logic">
+      <obj_property name="ElementShortName">can_sobel_campare</obj_property>
+      <obj_property name="ObjectShortName">can_sobel_campare</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/full1" type="logic">
+      <obj_property name="ElementShortName">full1</obj_property>
+      <obj_property name="ObjectShortName">full1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/full2" type="logic">
+      <obj_property name="ElementShortName">full2</obj_property>
+      <obj_property name="ObjectShortName">full2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/empty1" type="logic">
+      <obj_property name="ElementShortName">empty1</obj_property>
+      <obj_property name="ObjectShortName">empty1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/empty2" type="logic">
+      <obj_property name="ElementShortName">empty2</obj_property>
+      <obj_property name="ObjectShortName">empty2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/matrix_row" type="array">
+      <obj_property name="ElementShortName">matrix_row[7:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_row[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/matrix_col" type="array">
+      <obj_property name="ElementShortName">matrix_col[7:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_col[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/THRESHOLD" type="array">
+      <obj_property name="ElementShortName">THRESHOLD[7:0]</obj_property>
+      <obj_property name="ObjectShortName">THRESHOLD[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/BLACK" type="array">
+      <obj_property name="ElementShortName">BLACK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BLACK[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/WHITE" type="array">
+      <obj_property name="ElementShortName">WHITE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">WHITE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/max_row" type="array">
+      <obj_property name="ElementShortName">max_row[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_row[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/top_inst/sobel_ctrl_inst_1/max_col" type="array">
+      <obj_property name="ElementShortName">max_col[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_col[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/a" type="array">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/b" type="array">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sobel/c" type="array">
+      <obj_property name="ElementShortName">c[4:0]</obj_property>
+      <obj_property name="ObjectShortName">c[4:0]</obj_property>
+   </wvobject>
+</wave_config>

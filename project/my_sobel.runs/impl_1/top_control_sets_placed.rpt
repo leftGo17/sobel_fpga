@@ -1,0 +1,87 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov  9 18:34:54 2022
+| Host         : LAPTOP-7BI1LFRR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    37 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      8 |            6 |
+|      9 |            2 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            3 |
+| No           | No                    | Yes                    |              36 |           14 |
+| No           | Yes                   | No                     |              10 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              25 |            5 |
+| Yes          | Yes                   | No                     |             219 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------+------------------+----------------+
+|    Clock Signal    |                                                Enable Signal                                               |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG | uart_tx_inst/bit_flag_reg_n_0                                                                              | sobel_ctrl_inst_1/AR[0]              |                1 |              1 |
+|  sys_clk_IBUF_BUFG | uart_rx_inst/bit_flag_reg_n_0                                                                              | sobel_ctrl_inst_1/AR[0]              |                1 |              4 |
+|  sys_clk_IBUF_BUFG | uart_tx_inst/bit_cnt[3]_i_1_n_0                                                                            | sobel_ctrl_inst_1/AR[0]              |                1 |              4 |
+|  sys_clk_IBUF_BUFG | uart_rx_inst/po_flag                                                                                       | sobel_ctrl_inst_1/AR[0]              |                3 |              8 |
+|  sys_clk_IBUF_BUFG | uart_rx_inst/rx_data0                                                                                      | sobel_ctrl_inst_1/AR[0]              |                1 |              8 |
+|  sys_clk_IBUF_BUFG | uart_rx_inst/rx_flag                                                                                       | sobel_ctrl_inst_1/AR[0]              |                1 |              8 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/data_in1[7]_i_1_n_0                                                                      | sobel_ctrl_inst_1/AR[0]              |                1 |              8 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/cnt_row[7]_i_2_n_0                                                                       | sobel_ctrl_inst_1/cnt_row[7]_i_1_n_0 |                2 |              8 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/wr_en20                                                                                  | sobel_ctrl_inst_1/AR[0]              |                1 |              8 |
+|  sys_clk_IBUF_BUFG |                                                                                                            |                                      |                3 |              9 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/can_sobel_gxy                                                                            | sobel_ctrl_inst_1/AR[0]              |                3 |              9 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/fifo_inst_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | sobel_ctrl_inst_1/AR[0]              |                4 |             16 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/fifo_inst_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | sobel_ctrl_inst_1/AR[0]              |                3 |             16 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/fifo_inst_2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | sobel_ctrl_inst_1/AR[0]              |                4 |             16 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/fifo_inst_2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | sobel_ctrl_inst_1/AR[0]              |                4 |             16 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/can_sobel_gxx                                                                            | sobel_ctrl_inst_1/AR[0]              |                6 |             20 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/can_sobel                                                                                | sobel_ctrl_inst_1/AR[0]              |                6 |             22 |
+|  sys_clk_IBUF_BUFG |                                                                                                            | sobel_ctrl_inst_1/AR[0]              |               20 |             46 |
+|  sys_clk_IBUF_BUFG | sobel_ctrl_inst_1/rd_en_reg1                                                                               | sobel_ctrl_inst_1/AR[0]              |               15 |             72 |
++--------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------+------------------+----------------+
+
+

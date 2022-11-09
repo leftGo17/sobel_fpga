@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../my_sobel.srcs/sources_1/ip/data_fifo/sim/data_fifo.v" \
+"../../../../../rtl/uart.tx.v" \
+"../../../../../rtl/uart_rx.v" \
+"../../../../../rtl/top.v" \
+"../../../../../rtl/sobel_ctrl.v" \
+"../../../../../sim/tb_sobel.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
